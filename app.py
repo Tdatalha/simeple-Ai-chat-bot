@@ -5,7 +5,7 @@ from datetime import datetime
 st.set_page_config(page_title="AI Chat Support Bot", page_icon="🤖", layout="wide")
 
 # ====================== YOUR GEMINI KEY ======================
-genai.configure(api_key="AIzaSyANtAmTxY-RX-4DnDZNvkrZsUymoB2QXgE")
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 model = genai.GenerativeModel('gemini-2.5-flash')
 
